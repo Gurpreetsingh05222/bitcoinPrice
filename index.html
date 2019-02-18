@@ -3,22 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>Bitcoin Ticker</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Bitcoin Ticker</h1>
-        <form action="/" method="post">
-            <input type="text" name="amount" placeholder="Enter amount of crypto">
-            <select name="crypto">
-                <option value="BTC">Bitcoin</option>
-                <option value="ETH">Ethereum</option>
-                <option value="LTC">Litecoin</option>
-            </select>
-            <select name="fiat">
-                <option value="USD">US Dollar</option>
-                <option value="GBP">Great Britain Pound</option>
-                <option value="INR">Indian Ruppee</option>
-            </select>
-            <button type="submit" name="submit">Check</button>
-        </form>
+        <div class="wrapper">
+            <h1 class="text-center">Bitcoin Ticker</h1>
+            <form action="/" method="post">
+                <input type="text" name="amount" class="form-control input" placeholder="Enter amount of crypto" required><br>
+                <label for="crypto">Select crypto type : </label><br>
+                <select name="crypto">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="LTC">Litecoin</option>
+                </select><br><br>
+                <label for="fiat">Select currency : </label><br>
+                <select name="fiat">
+                    <option value="USD">US Dollar</option>
+                    <option value="GBP">Great Britain Pound</option>
+                    <option value="INR">Indian Ruppee</option>
+                </select><br><br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Check</button>
+            </form>
+        </div>
     </body>
 </html>
