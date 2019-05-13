@@ -19,7 +19,7 @@ app.post("/", function(req, res){
     var amount = req.body.amount;
 
     var options = {
-        url: "https://apiv2.bitcoinaverage.com/convert/global",
+        url: "https://apiv2.bitcoinaverage.com/convert/global",//api link
         method: "GET",
         qs:{
             from: crypto,
